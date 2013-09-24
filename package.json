@@ -11,5 +11,10 @@
     "node-sass": "*",
     "socket.io": "*",
     "ember": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-ember-handlebars": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
