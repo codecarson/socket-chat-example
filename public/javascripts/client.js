@@ -165,6 +165,9 @@ Chat.ApplicationController = Em.Controller.extend();
 Chat.ApplicationView = Em.View.extend({
   templateName            : 'appView'
 , classNames              : ['container-fluid']
+, userNameInput           : Em.TextField.extend({
+
+  })
 });
 
 

@@ -1,16 +1,28 @@
+{{#if Chat.currentUser.user}}
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
+    <div class="container-fluid">
     <!--List of rooms-->
-    <h1>Room List</h1>
+    </div>
   </div>
 </div>
 <div class="row-fluid">
   <div class="span2">
   <!--Left sidebar containing list of users-->
-    <h1>User List</h1>
   </div>
   <div class="span10">
   <!--Main chat window-->
-    <h1>Main Chat Window</h1>
   </div>
 </div>
+{{else}}
+<div class="row-fluid">
+  <div class="offset4 span4 offset4">
+    <legend>User Name</legend>
+    <label>Enter a user name to start chatting!</label>
+    {{view view.userNameInput placeholder="Ex. John Doe"}}
+    <div>
+      <button class="btn">Enter Chat Room</button>
+    </div>
+  </div>
+</div>
+{{/if}}
